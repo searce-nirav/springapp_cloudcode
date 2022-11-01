@@ -1,0 +1,16 @@
+apiVersion: skaffold/v2beta29
+kind: Config
+metadata:
+  name: springapp
+build:
+  artifacts:
+    - image: asia-south1-docker.pkg.dev/admin-project-359810/my-repo/springapp
+      docker:
+        dockerfile: Dockerfile
+  tagPolicy:
+    sha256: {}
+deploy:
+  kubectl:
+    manifests:
+      - deployment.yaml
+      - service.yaml
