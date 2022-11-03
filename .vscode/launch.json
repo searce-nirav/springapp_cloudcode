@@ -7,7 +7,9 @@
             "skaffoldConfig": "${workspaceFolder}/skaffold.yaml",
             "watch": true,
             "cleanUp": true,
-            "portForward": true
+            "portForward": true,
+            "internalConsoleOptions": "neverOpen",
+            "imageRegistry": "asia-south1-docker.pkg.dev/admin-project-359810/my-repo"
         }
     ]
 }

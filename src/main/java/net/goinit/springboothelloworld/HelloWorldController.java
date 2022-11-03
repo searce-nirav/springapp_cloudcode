@@ -8,7 +8,7 @@ public class HelloWorldController {
 
 	@GetMapping("/")
 	public String sayHello() {
-		return "Hello from Cloud Code!! Running on MiniKube...Will be testing for CloudBuild";
+		return "Hello from Cloud Code!! Running on MiniKube...Will be soon available for CloudBuild";
 	}
 	
 }
