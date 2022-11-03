@@ -1,9 +1,9 @@
 #### Building Docker Image ####
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '--tag=gcr.io/$PROJECT_ID/skaffold:alpha', '.']
+  args: ['build', '--tag=gcr.io/admin-project-359810/skaffold:alpha', '.']
 
-images: ['gcr.io/$PROJECT_ID/skaffold:alpha']
+images: ['gcr.io/admin-project-359810/skaffold:alpha']
 tags: ['cloud-builders-community']
 
 #### Pushing Docker Image ####
