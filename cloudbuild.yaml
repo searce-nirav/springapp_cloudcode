@@ -21,4 +21,4 @@ tags: ['cloud-builders-community']
 #     env: 'GIT_ACCESS_TOKEN'
 
 # # options:
-# #   logging: CLOUD_LOGGING_ONLY
+   logging: CLOUD_LOGGING_ONLY
