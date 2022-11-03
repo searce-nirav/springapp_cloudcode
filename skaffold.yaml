@@ -4,11 +4,14 @@ metadata:
   name: springapp
 build:
   googleCloudBuild:
-    projectId: admin-project-359810  
+    projectId: admin-project-359810
+    
   artifacts:
     - image: asia-south1-docker.pkg.dev/admin-project-359810/my-repo/springapp
       docker:
         dockerfile: Dockerfile
+  tagPolicy:
+    sha256: {}
 deploy:
   kubectl:
     manifests:
