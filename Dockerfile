@@ -5,7 +5,7 @@ COPY . .
 RUN mvn install
 
 ## Stage 2
-FROM openjdk:11-jdk-slim
+FROM openjdk:24-ea-11-jdk-oraclelinux8
 COPY --from=builder /app/target/springboot-helloworld.jar springapp.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","springapp.jar"]
